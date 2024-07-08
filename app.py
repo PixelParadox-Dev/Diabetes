@@ -1,4 +1,4 @@
-from flask import Flask,render_template
+from flask import Flask, render_template
 
 app=Flask(__name__)
 
@@ -11,7 +11,7 @@ def about():
     return render_template('about.html')
 
 @app.route('/login')
-def login_page():
+def login_page(): 
     return render_template('login.html')
 
 @app.route('/signup')
